@@ -1,0 +1,721 @@
+html {
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #01131d;
+  display: flex;
+}
+
+
+.logo {
+  height: 4rem;
+  margin: 0.5rem;
+}
+
+.a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Quantico", sans-serif;
+  font-size: 1.1em;
+  
+  transition: color 0.3s ease;
+}
+
+.a:hover {
+  color: #3498db;
+}
+
+.hero {
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+
+}
+
+.cab {
+  width: 100%;
+
+}
+
+h2 {
+  margin-left: 40%;
+  margin-top: 6%;
+  font-size: 90%;
+  color: rgb(199, 210, 220);
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  height: 100%;
+  font-style: italic;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  text-align: center;
+
+
+}
+
+.chamada {
+
+  margin-top: 4%;
+  color: aliceblue;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 170%;
+  margin-left: 37%;
+}
+
+
+
+.link_wrapper {
+  position: relative;
+  margin-top: 9%;
+  margin-bottom: 9%;
+}
+
+.vaga {
+  display: block;
+  width: 60%;
+  height: 10%;
+  line-height: 200%;
+  margin-left: 35%;
+  font-weight: bold;
+  text-decoration: none;
+  background: #219EBC;
+  text-align: center;
+  color: #fff;
+  border-radius: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #219EBC;
+  transition: all .35s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #FFB703;
+  transition: all .35s;
+}
+
+.vaga:hover {
+  width: 80%;
+  border: 3px solid #FFB703;
+  background: transparent;
+  color: #FFB703;
+}
+
+.vaga:hover+.icon {
+  border: 3px solid #FFB703;
+  right: -2%;
+}
+
+.agenda {
+  background-color: #023047;
+  margin: 0%;
+  padding-bottom: 3%;
+}
+
+.prog {
+  margin-top: 0%;
+  padding-top: 5%;
+  color: aliceblue;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 170%;
+  text-align: center;
+}
+
+/* From Uiverse.io by Smit-Prajapati */
+.quad {
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+  width: 300px;
+  perspective: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6%;
+  padding: 2%;
+}
+
+.car {
+  padding-top: 13%;
+  /* border-radius: 10px; */
+  border: 3px solid rgb(255, 255, 255);
+  transform-style: preserve-3d;
+  background: linear-gradient(135deg, #0000 18.75%, #f3f3f3 0 31.25%, #0000 0),
+    repeating-linear-gradient(45deg, #f3f3f3 -6.25% 6.25%, #ffffff 0 18.75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 0;
+  background-color: #f0f0f0;
+  width: 100%;
+  box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.car:hover {
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.content-box {
+  background: rgba(4, 193, 250, 0.732);
+  /* border-radius: 10px 100px 10px 10px; */
+  transition: all 0.5s ease-in-out;
+  padding: 13% 7% 7% 7%;
+  transform-style: preserve-3d;
+}
+
+.content-box .car-title {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.content-box .car-title:hover {
+  transform: translate3d(0px, 0px, 60px);
+}
+
+.content-box .car-content {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f2f2f2;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 30px);
+}
+
+.content-box .car-content:hover {
+  transform: translate3d(0px, 0px, 60px);
+}
+
+.content-box .see-more {
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: rgb(7, 185, 255);
+  /* border-radius: 5px; */
+  background: white;
+  padding: 0.5rem 0.7rem;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.content-box .see-more:hover {
+  transform: translate3d(0px, 0px, 60px);
+}
+
+.date-box {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 25px;
+  width: 60px;
+  background: white;
+  border: 1px solid rgb(7, 185, 255);
+  /* border-radius: 10px; */
+  padding: 10px;
+  transform: translate3d(0px, 0px, 80px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
+
+.date-box span {
+  display: block;
+  text-align: center;
+}
+
+.date-box .month {
+  color: rgb(4, 193, 250);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.date-box .date {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(4, 193, 250);
+}
+
+.palestra {
+  background-color: #8ecae6;
+  margin: 0%;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.pal {
+  margin-top: 0%;
+  padding-top: 5%;
+  color: #01131d;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 170%;
+  text-align: center;
+}
+
+/* From Uiverse.io by Prince4fff */
+.card {
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 200px;
+  height: 254px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 23%;
+  margin-top: 8%;
+}
+
+.card-photo {
+  /* clear and add new css */
+  transform: scale(0.3) translate(220px, 230px);
+  width: 250px;
+  height: 250px;
+  margin-left: -125px;
+  margin-top: -125px;
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  border-radius: 30%;
+}
+
+/* delete */
+.card-photo::before {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 160px;
+  height: 200px;
+  left: 50%;
+  top: -10%;
+  margin-left: -80px;
+  background-repeat: no-repeat;
+}
+
+/* delete */
+.card-photo::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 2.5em;
+  height: .8em;
+  left: 28.5%;
+  top: 26%;
+}
+
+.card-title {
+  text-align: center;
+  color: var(--font-color);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-title span {
+  font-size: 15px;
+  color: var(--font-color-sub);
+}
+
+.card-socials {
+  display: flex;
+  height: 0;
+  opacity: 0;
+  margin-top: 20px;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.card-socials-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card-socials-btn svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--main-color);
+}
+
+.card:hover>.card-socials {
+  opacity: 1;
+  height: 35px;
+}
+
+.card-socials-btn:hover {
+  transform: translateY(-5px);
+  transition: all 0.15s;
+}
+
+.card-photo:hover {
+  transition: 0.3s;
+  transform: scale(0.4) translate(160px, 150px);
+}
+
+.pes {
+  width: 100%;
+  margin-top: -27%;
+  max-height: 400px;
+  border-radius: 40px;
+}
+
+
+.cadastro {
+  background-color: #023047;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.cadt {
+  margin-top: 0%;
+  padding-top: 5%;
+  color: aliceblue;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 170%;
+  text-align: center;
+}
+
+.cadastro-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cadastro-title {
+  margin-top: 0%;
+  padding-top: 5%;
+  color: aliceblue;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 170%;
+  text-align: center;
+}
+
+.cadastro-subtitle {
+  font-family: "Quantico", sans-serif;
+  color: #ccc2c2;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 5%;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  color: #7b8184;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #8c9296;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: "Quantico", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  /* Garante que o padding não aumente a largura total */
+}
+
+.cadastro-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  background: #219EBC;
+  color: #fff;
+  border: 3px solid #219EBC;
+  border-radius: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .35s;
+}
+
+.cadastro-btn:hover {
+  background: #FFB703;
+  color: #01131d;
+  border-color: #FFB703;
+}
+
+footer {
+  background-color: #01131d;
+  margin: 0%;
+  align-items: center;
+  padding: 5%;
+}
+
+h4 {
+  color: #ccc;
+  text-align: center;
+}
+
+
+
+.cronometro {
+  background-color: #8ecae6;
+  margin: 0;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.falta {
+  margin-top: 0;
+  padding-top: 5%;
+  color: #01131d;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 230%;
+  text-align: center;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center; /* Centraliza o contador na página */
+  align-items: center; /* Alinha os blocos verticalmente */
+  gap: 20px; /* Adiciona um espaço entre os blocos (Dias, Horas, etc.) */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.bloco-tempo {
+  display: flex; /* Transforma o bloco em um flex container */
+  flex-direction: column; /* Coloca os números e o label um abaixo do outro */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bloco-numeros {
+  display: flex; /* Para os dígitos ficarem lado a lado dentro do bloco */
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Espaço entre os dígitos dezenas e unidades */
+}
+
+/* O resto do seu CSS para a animação dos números continua o mesmo */
+.bloco-numero-unidade,
+.bloco-numero-dezena {
+  display: block;
+  font-size: 3.5em;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.4s ease-in-out;
+}
+
+.label {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* Seus estilos para o wrapper3 e o link */
+.wrapper3 {
+  position: relative;
+  margin-top: 9%;
+  margin-bottom: 9%;
+  margin-left: -43%;
+}
+
+
+/* Adicione esta regra para o container do tempo */
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adiciona um pequeno espaço entre os itens */
+}
+
+#weather-icon {
+  width: 60px; /* Ajuste o tamanho do ícone */
+  height: 60px;
+}
+
+/* O restante do seu CSS continua o mesmo */
+.tempos {
+  background-color: #8ecae6;
+  margin: 0%;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.tempo-label {
+  margin-top: 0%;
+  padding-top: 5%;
+  color: #01131d;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 230%;
+  text-align: center;
+}
+
+.weather-info {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.location {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.condition {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.refresh-btn {
+  display: block;
+  width: 90%;
+  margin: 5%;
+  padding: 15px;
+  margin-top: 10px;
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  background: #219EBC;
+  color: #fff;
+  border: 3px solid #219EBC;
+  border-radius: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .35s;
+}
+
+
+.r{
+  display: flex;
+  flex-direction: column;
+  margin:3%
+  
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .quad {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%; 
+        max-width: 760px; 
+        margin: 0 auto; 
+        margin-left:2% ;
+        
+    }
+
+    .parent {
+        margin: 0; 
+    }
+
+    .pf {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px; 
+        max-width: 1200px; 
+        margin: auto 10%; 
+    }
+    
+    .card {
+        margin: 0; 
+    }
+
+    .logo{
+      margin-left: 20%;
+    }
+
+    .chamada{
+      font-size: 260%;
+      margin-left: 42%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .quad {
+    margin-left:15% ;
+  }
+
+      .chamada{
+      font-size: 400%;
+      margin-left: 40%;
+    }
+
+}
+
+
+  
